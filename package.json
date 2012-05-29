@@ -1,0 +1,8 @@
+{
+    "name": "nodejs",
+    "description": "nodejs test",
+    "version": "0.1.0",
+    "author": "raveclassic",
+    "dependencies": {},
+    "devDependencies": {}
+}
