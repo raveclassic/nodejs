@@ -3,6 +3,8 @@
     "description": "nodejs test",
     "version": "0.1.0",
     "author": "raveclassic",
-    "dependencies": {},
+    "dependencies": {
+        "express":"2.5.x"
+    },
     "devDependencies": {}
 }
