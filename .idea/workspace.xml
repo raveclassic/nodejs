@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5940f539-563e-4dc1-8882-ee8f7cafb9fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodejs.tmproj" afterPath="$PROJECT_DIR$/nodejs.tmproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-    </list>
+    <list default="true" id="5940f539-563e-4dc1-8882-ee8f7cafb9fe" name="Default" comment="" />
     <ignored path="nodejs.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +34,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="44" selection-start="53" selection-end="53" vertical-scroll-proportion="0.036322363">
+            <state line="14" column="7" selection-start="372" selection-end="372" vertical-scroll-proportion="0.25425652">
               <folding />
             </state>
           </provider>
@@ -383,7 +378,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="44" selection-start="53" selection-end="53" vertical-scroll-proportion="0.036322363">
+        <state line="14" column="7" selection-start="372" selection-end="372" vertical-scroll-proportion="0.25425652">
           <folding />
         </state>
       </provider>
