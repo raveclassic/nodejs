@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5940f539-563e-4dc1-8882-ee8f7cafb9fe" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="nodejs.iws" />
@@ -28,7 +27,7 @@
       <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="36" selection-start="416" selection-end="416" vertical-scroll-proportion="0.16997792">
+            <state line="20" column="19" selection-start="449" selection-end="449" vertical-scroll-proportion="0.22295806">
               <folding />
             </state>
           </provider>
@@ -398,7 +397,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="416" selection-end="416" vertical-scroll-proportion="0.16997792">
+        <state line="20" column="19" selection-start="449" selection-end="449" vertical-scroll-proportion="0.22295806">
           <folding />
         </state>
       </provider>
