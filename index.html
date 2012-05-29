@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" language="javascript">
+		  var socket = io.connect('http://localhost', 8080);
+		  socket.on('logon', function (data) {
+			console.log(data);
+			socket.emit('my other event', { my: 'data' });
+		  });
+		</script>
+	</head>
+	<body>
+		test
+	</body>
+</html>
