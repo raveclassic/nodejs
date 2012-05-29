@@ -5,7 +5,7 @@ var db = require('./database.js');
 
 var test = require('./test.js');
 
-if (app.listen(8080)._handle) {
+app.listen(8080);
     var users = new Array();
     db.open(
         function() {
@@ -28,7 +28,7 @@ if (app.listen(8080)._handle) {
             console.dir(err);
         }
     );
-}
+
 
 function handler(req, res) {
     fs.readFile(__dirname + '/index.html',
