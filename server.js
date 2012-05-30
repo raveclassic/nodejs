@@ -12,7 +12,11 @@ app.get('/', function(request, response) {
    response.send("hello world!");
 });
 
-var port = process.env.PORT || 8080;
+app.get('/favicon.ico', function(request, respose) {
+
+});
+
+var port = process.env.PORT || 4040;
 
 app.listen(port, function() {
     console.log("Listening on port: "+port);
