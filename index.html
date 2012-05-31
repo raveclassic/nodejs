@@ -1,15 +1,32 @@
-<html>
+﻿<html>
 	<head>
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
 		<script type="text/javascript" language="javascript">
-		  var socket = io.connect('http://vibestest.herokuapp.com/');
-		  socket.on('logon', function (data) {
-			console.log(data);
-			socket.emit('my other event', { my: 'data' });
-		  });
+			var socket = io.connect('http://localhost');
+			socket.on('message', function(data) {
+				$("#outputArea").text($("#outputArea").text() + "\n" + data);
+				console.log(data);
+			});
+			function makeRequest() {
+				socket.emit('message', { 
+					api:'vk', 
+					methodName:$("#methodNameTextBox").text(),
+					params:$("#methodParamsTextBox").text()
+				});
+			}
 		</script>
 	</head>
 	<body>
-		test
+		<div id="inputArea">
+			<label for="methodNameTextBox">Method name:</label>
+			<input type="text" id="methodNameTextBox" />
+			<label for="methodParamsTextBox">Methos params "['param=value',...]":</label>
+			<input type="text" id="methodParamsTextBox" />
+			<input type="button" value="Send" onClick="makeRequest()" />
+		</div>
+		<div id="outputArea">
+		</div>
 	</body>
 </html>
