@@ -6,14 +6,14 @@
 		<script type="text/javascript" language="javascript">
 			var socket = io.connect('http://localhost');
 			socket.on('message', function(data) {
-				$("#outputArea").text($("#outputArea").text() + "\n" + data);
+				$("#outputArea").html($("#outputArea").html() + "<p>" + JSON.stringify(data) + "</p>") ;
 				console.log(data);
 			});
 			function makeRequest() {
 				socket.emit('message', { 
 					api:'vk', 
-					methodName:$("#methodNameTextBox").text(),
-					params:$("#methodParamsTextBox").text()
+					methodName:$("#methodNameTextBox").val(),
+					id:$("#methodParamsTextBox").val()
 				});
 			}
 		</script>
