@@ -1,32 +1,28 @@
 ﻿<html>
 	<head>
 		<META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel='stylesheet' href="/css/style.css" type="text/css"/>
+        <link rel='stylesheet' href="/css/reset.css" type="text/css"/>
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="/settings.js"></script>
+        <script type="text/javascript" src="/scripts/app.js"></script>
+        <script type="text/javascript" src="/scripts/sockets.js"></script>
+        <script type="text/javascript" src="/scripts/jquery.cookie.js"></script>
+        <script type="text/javascript" src="/scripts/jquery.xdomainajax.js"></script>
+        <script type="text/javascript" src="/scripts/vk.js"></script>
+        <script type="text/javascript" src="/scripts/md5-min.js"></script>
 		<script type="text/javascript" language="javascript">
-			var socket = io.connect('http://localhost');
-			socket.on('message', function(data) {
-				$("#outputArea").html($("#outputArea").html() + "<p>" + JSON.stringify(data) + "</p>") ;
-				console.log(data);
-			});
-			function makeRequest() {
-				socket.emit('message', { 
-					api:'vk', 
-					methodName:$("#methodNameTextBox").val(),
-					id:$("#methodParamsTextBox").val()
-				});
-			}
+            window.onload = function() {
+                App.init();
+            };
 		</script>
 	</head>
 	<body>
-		<div id="inputArea">
-			<label for="methodNameTextBox">Method name:</label>
-			<input type="text" id="methodNameTextBox" />
-			<label for="methodParamsTextBox">Methos params "['param=value',...]":</label>
-			<input type="text" id="methodParamsTextBox" />
-			<input type="button" value="Send" onClick="makeRequest()" />
-		</div>
-		<div id="outputArea">
-		</div>
+        <div id="tokenArea">
+            <label for="tokenTextBox">Paste token here:</label>
+            <input type="text" id="tokenTextBox" style="width:600px"/>
+            <input type="button" value="update" onclick="VK.updateToken()" />
+        </div>
 	</body>
 </html>
